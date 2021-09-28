@@ -36,7 +36,7 @@ class Feedback extends Component {
     return (
       <>
         <Section title="Please leave your feedback">
-          <Buttons addFeedback={addFeedback} />
+          <Buttons addFeedback={addFeedback} options={['good', 'neutral', 'bad']} />
         </Section>
         {total === 0 ? (
           <Notification message="No feedback given" />
