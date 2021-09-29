@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './Buttons.module.css';
 
 const Buttons = ({ addFeedback, options }) => {
@@ -11,6 +12,11 @@ const Buttons = ({ addFeedback, options }) => {
       ))}
     </>
   );
+};
+
+Buttons.propTypes = {
+  addFeedback: PropTypes.func.isRequired,
+  options: PropTypes.array.isRequired,
 };
 
 export default Buttons;
